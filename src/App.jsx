@@ -4,7 +4,7 @@ import RenderFile from './components/RenderFile.jsx';
 import axios from 'axios';
 import DownloadFile from './components/DownloadFile.jsx';
 
-axios.defaults.baseURL = "https://fileshare-api-dz74.onrender.com/"; // server
+// axios.defaults.baseURL = "https://fileshare-api-dz74.onrender.com/"; // server
 
 function App() {
   const [file, setFile] = useState(null);
@@ -21,7 +21,7 @@ function App() {
       const { data } = await axios({
         method: "post",
         data: formData,
-        url: "api/files/upload",
+        url: "/api/files/upload",
         headers: {
           "Content-Type": "multipart/form-data"
         }
