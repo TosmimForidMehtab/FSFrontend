@@ -4,7 +4,7 @@ import RenderFile from './components/RenderFile.jsx';
 import axios from 'axios';
 import DownloadFile from './components/DownloadFile.jsx';
 
-axios.defaults.baseURL = "http://localhost:8000/"; // server
+axios.defaults.baseURL = "https://fileshare-api-dz74.onrender.com/"; // server
 
 function App() {
   const [file, setFile] = useState(null);

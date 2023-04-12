@@ -10,7 +10,7 @@ const Download = () => {
   const idJson = JSON.stringify(params);
   const idParam = JSON.parse(idJson).id;
   // console.log(id);
-  const API_URL = `http://localhost:8000/api/files/${idParam}`; // server
+  const API_URL = `https://fileshare-api-dz74.onrender.com/api/files/${idParam}`; // server
 
   const fecthData = async (url) => {
     try {
@@ -29,7 +29,7 @@ const Download = () => {
   console.log(file);
 
   const handleDownload = async () => {
-    const { data } = await axios.get(`http://localhost:8000/api/files/${idParam}/download`, { responseType: "blob" });
+    const { data } = await axios.get(`https://fileshare-api-dz74.onrender.com/api/files/${idParam}/download`, { responseType: "blob" });
 
     fileDownload(data, file?.name);
 
