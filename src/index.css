@@ -74,6 +74,6 @@ button:focus-visible {
 
 @layer components {
     .button {
-        @apply p-2 my-5 bg-gray-900 rounded-md w-44 focus:outline-none;
+        @apply p-2 mx-auto my-5 bg-gray-900 rounded-md w-44 focus:outline-none font-medium tracking-wide text-white;
     }
 }
