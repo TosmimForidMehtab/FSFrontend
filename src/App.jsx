@@ -41,7 +41,7 @@ function App() {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center min-w-full min-h-screen'>
+    <div className='flex flex-col items-center justify-center '>
       <h3 className='my-4 text-3xl font-medium'>Select or Drop a file here</h3>
       <div className='flex flex-col items-center w-96 bg-gray-800 shadow-xl rounded-xl justify-center'>
 
