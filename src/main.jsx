@@ -5,7 +5,7 @@ import { Entry } from './Entry';
 import './index.css';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <div className='h-screen font-serif text-white bg-gray-900 grid place-items-center min-w-fit min-h-screen'>
+    <div className='h-screen font-serif text-white bg-gray-900 grid place-items-center min-w-fit min-h-fit'>
       {/* <App /> */}
       <Entry />
     </div>
